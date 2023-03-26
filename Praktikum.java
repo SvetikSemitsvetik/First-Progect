@@ -1,3 +1,25 @@
-public class Practikum{
-int i = 0;
+public class Practicum {
+    public Double calculate (Double first, Integer second, String operation){
+        switch (operation){
+            case "+":
+                return first + second;
+            case "-":
+                return first - second;
+            case "*":
+                return first * second;
+            case "/":
+                return Double.valueOf(first) / Double.valueOf(second);
+            default:
+                System.out.println("такая функция не поддерживается!");
+                return Double.valueOf(-1);
+
+        }
+
+
+
+    }
+
+
+
+
 }
